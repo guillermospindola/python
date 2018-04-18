@@ -69,4 +69,45 @@ print(texto.lower())
 print("Ponemos las primeras letras de cada palabra en mayusculas con capitaliza")
 print(texto.capitalize())
 
+""" La función strip elimina caracteres al principio y al final de una cadena """
+comas = ",Josh,"
+print(comas.strip(","))
+
+""" Se utiliza replace para remplazar partes de una cadena por otras """
+print(nombre.replace("mo", "mina"))
+
+""" Se pueden utilizar varias funciones a la vez """
+print(comas.strip(",").replace("sh","rge"))
+
+""" Con el método split se puede separar un string en varios """
+frutas  = "Manzana|Pera|Guayaba"
+frutas.split("|")
+print(frutas)
+
+#NUMEROS
+
+""" Hay dos tipos numericos basicos primitivos en Python y son los int(enteros) y float(decimales) """
+entero = 41
+print(type(entero))
+
+decimal = math.pi
+print(type(decimal))
+
+""" Se pueden convertir numeros a decimales con el metodo str """
+print(type(str(entero)))
+
+""" Tambien se puede utilizar el metodo format con números """
+edad = 23
+altura = 1.97
+print(f"Hola, mi nombre es {nombre}, me apellido {apellido}, tengo {edad} años y mido {altura} centimetros")
+
+""" De igual manera se pueden convertir strings a numeros """
+kobe = "24"
+dirk = "41"
+print(int(kobe) + int(dirk))
+
+""" Convertimos float a int """
+flotante = 23.5
+print(int(flotante))
+
 
