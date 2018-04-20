@@ -38,4 +38,25 @@ x = 1
 for x in range(1,10):
     print("Este es el número:", format(x))
 
-numeros = [1,2,3,4,5,6,7,8,9,10]
+numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+for numero in numeros:
+    if numero <= 10:
+        print(f"Número válido {numero}")
+    else:
+        print(f"Número inválido {numero}")
+
+"Existen ocasiones en las cuales vamos a necesitar romper el bucle si ocurre determinada condicion"
+"Esto lo podemos llevar a cabo con la palabra reservada break"
+for numero in numeros:
+    if numero <= 10:
+        print(f"Número {numero} válido")
+    else:
+        print(f"Error! número {numero} inválido, saliendo del bucle")
+        break
+
+"En ocasiones en vez de romprer el bucle, requerimos de no realizar ninguna acción para cierta iteracion"
+"En estos casos se puede utilizar la palabra reservada pass"
+for numero in numeros:
+    if numero <= 10:
+        print(f"Número {numero} válido")
