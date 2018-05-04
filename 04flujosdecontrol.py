@@ -157,10 +157,26 @@ dias_semana = {
     "Domingo": 7
 }
 
+#Esto no funciona, no podemos cambial el tamaño de un diccionario dentro de un loop 
+
+"""for clave, valor in dias_semana.items():
+    dias_semana[clave.upper()] = valor
+    dias_semana.pop(clave)"""
+
+dias_semana_mayusculas = {}
+for clave, valor in dias_semana.items():
+    dias_semana_mayusculas[clave.upper()] = valor
+dias_semana = dias_semana_mayusculas
+print(dias_semana)
+
+
 "De e diccionario crear una lista de los dias de la semana que tengan una O"
 
-for claves_semana in dias_semana.values():
-    print(claves_semana.keys().upper())
+dias_con_o = []
+for clave in dias_semana:
+    if "O" in clave:
+        dias_con_o.append(clave)
+print(dias_con_o)
 
 
 
