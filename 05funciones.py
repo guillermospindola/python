@@ -115,7 +115,9 @@ inverso """
 
 def invertirpalabras(frase):
     frase_invertida = ""
+    #se separa la frase con el método split, el separador es un espacio
     palabras = frase.split(" ")
+    #iteramos cada palabra en sentido inverso
     for palabra in palabras[::-1]:
         frase_invertida += palabra
         frase_invertida += " "
