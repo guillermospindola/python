@@ -16,7 +16,7 @@ def main(argumentos):
     """
     if argumentos[0] == "saludar":
         nombre = argumentos[1]
-        saludar_modulo[nombre]
+        saludar_modulo(nombre)
 
 if __name__ == "__main__":
     #Este codigo solo se ejecutara si ejecutamos este script directamente
